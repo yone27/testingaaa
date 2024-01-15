@@ -1,0 +1,44 @@
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    border-radius: 4px;
+    user-select: none;
+    outline: none !important;
+    padding: 12px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    transition: all .3s ease;
+    margin-right: 15px;
+}
+
+.btn:hover, .btn:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+#filters {
+    margin-bottom: 50px;
+}
+@media(max-width: 768px) {
+    .btn {
+        margin-right: 0;
+    }
+    #filters {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #filters > * {
+        margin-bottom: 10px;
+    }
+}

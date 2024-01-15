@@ -1,0 +1,119 @@
+.about {
+    display: flex;
+}
+
+.about > * {
+    flex: 0.5;
+}
+
+.about h1 {
+    font-size: 2.5em;
+    color: #1c1c1a;
+    font-weight: normal;
+}
+.about__info {
+    position: relative;
+}
+.about__info > :not(:last-child) {
+    margin-bottom: 20px;
+}
+.about__info::before {
+    content: "";
+    position: absolute;
+    bottom: -300px;
+    left: -200px;
+    z-index: -5;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #fff 50%, var(--graylighter) 49%);
+    border-radius: 50%;
+}
+.about__imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.about__imgContainer figure {
+    /*height: 100%;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.about__imgContainer figure::before {
+    content: "Desarrollo";
+    position: absolute;
+    top: -55px;
+    right: 20px;
+    z-index: -5;
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #f1f1f1;
+}
+.about__imgContainer figure::after {
+    content: "";
+    position: absolute;
+    bottom: -90px;
+    right: -100px;
+    z-index: -5;
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle, #fff 38%, var(--color3) 35%);
+    border-radius: 50%;
+}
+.about__img {
+    background: var(--color1);
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: 8px 16px 11px rgba(0, 0, 0, 0.25);
+}
+.about__img img {
+    width: 80%;
+}
+
+/* Icons */
+.icons > :not(:last-child) {
+    margin-bottom: 20px;
+}
+.icon-box {
+    display: flex;
+}
+.icon-box .icon {
+    margin-right: 15px;
+    color: var(--color1);
+}
+
+.icons--color4 .icon-box .info > * {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .about {
+        display: grid;
+    }
+    .about__imgContainer {
+        order: -1;
+    }
+    .about__imgContainer figure::after {
+        right: 0;
+        left: 0;
+        margin-right: 40%;
+        margin-left: auto;
+    }
+    .about__info {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .about.section {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .about__info {
+        margin-right: 60px;
+    }
+    
+}
