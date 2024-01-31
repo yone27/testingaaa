@@ -1,9 +1,9 @@
 export const data = [
   {
-    title: "Rick and Morty",
-    url: "https://rick-and-morty-529c1.web.app/",
+    title: "MERN SOCIAL",
+    url: "https://mern-social-app-rouge.vercel.app/",
     summary: "",
-    img: "rick.png",
+    img: "social.png",
     tech: ["ReactJs"],
   },
   {
@@ -14,17 +14,24 @@ export const data = [
     tech: ["ReactJs"],
   },
   {
-    title: "Rock Paper Scissors",
-    url: "https://rock-paper-and-scissors-a5e38.web.app/",
-    summary: "",
-    img: "rock-paper-scissors.png",
-    tech: ["ReactJs"],
-  },
-  {
     title: "Pokedex",
     url: "https://pokedex-ashen-two.vercel.app/",
     summary: "",
     img: "pokedex.png",
+    tech: ["ReactJs"],
+  },
+  {
+    title: "Rick and Morty",
+    url: "https://rick-and-morty-529c1.web.app/",
+    summary: "",
+    img: "rick.png",
+    tech: ["ReactJs"],
+  },
+  {
+    title: "Rock Paper Scissors",
+    url: "https://rock-paper-and-scissors-a5e38.web.app/",
+    summary: "",
+    img: "rock-paper-scissors.png",
     tech: ["ReactJs"],
   },
   {
